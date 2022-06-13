@@ -59,6 +59,11 @@ kotlin {
             framework()
         }
     }
+    iosSimulatorArm64() {
+        binaries {
+            framework()
+        }
+    }
 
     sourceSets {
         commonMain {
@@ -92,6 +97,10 @@ kotlin {
         }
 
         iosX64Main {
+            dependsOn(nativeMain)
+        }
+
+        iosSimulatorArm64Main {
             dependsOn(nativeMain)
         }
     }
