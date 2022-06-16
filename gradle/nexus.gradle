@@ -12,9 +12,9 @@ nexusPublishing {
     }
 }
 
-signing {
-    def signingKey = properties.getProperty("signingKey")
-    def signingPassword = properties.getProperty("signingPassword")
-    useInMemoryPgpKeys(signingKey, signingPassword)
-    sign(publishing.publications)
-}
+//signing {
+//    def signingKey = properties.getProperty("signingKey")
+//    def signingPassword = properties.getProperty("signingPassword")
+//    useInMemoryPgpKeys(signingKey, signingPassword)
+//    sign(publishing.publications)
+//}
